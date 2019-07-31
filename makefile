@@ -59,12 +59,12 @@ help:	README.md
 	less $^
 
 bec-gp-rot-2d-th:
-	$(FC) $(OMPFLAGS) -c src/bec-gp-rot-2d-th.f90 -o bec-gp-rot-2d-th.o
+	$(FC) $(OMPFLAGS) -c bec-gp-rot-2d-th.f90 -o bec-gp-rot-2d-th.o
 	$(FC) $(OMPFLAGS) bec-gp-rot-2d-th.o -o bec-gp-rot-2d-th
 	rm *.o *.mod
 
 bec-gp-rot-3d-th:
-	$(FC) $(OMPFLAGS) -c src/bec-gp-rot-3d-th.f90 -o bec-gp-rot-3d-th.o
+	$(FC) $(OMPFLAGS) -c bec-gp-rot-3d-th.f90 -o bec-gp-rot-3d-th.o
 	$(FC) $(OMPFLAGS) bec-gp-rot-3d-th.o -o bec-gp-rot-3d-th
 	rm *.o *.mod
 
